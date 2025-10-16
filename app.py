@@ -104,7 +104,7 @@ def show_architecture_info():
         
         # Diagrama de arquitectura
         st.image("https://miro.medium.com/max/1400/1*vkQ0hXDaQv57sALXAJquxA.jpeg", 
-                caption="Ejemplo de arquitectura CNN", use_column_width=True)
+                caption="Ejemplo de arquitectura CNN", use_container_width=True)
 
 
 def visualize_sample_images(manager):
@@ -155,7 +155,7 @@ def predict_image_interface():
         with col1:
             st.subheader("📸 Imagen Original")
             image = Image.open(uploaded_file)
-            st.image(image, use_column_width=True)
+            st.image(image, use_container_width=True)
         
         with col2:
             st.subheader("🎯 Predicción")
