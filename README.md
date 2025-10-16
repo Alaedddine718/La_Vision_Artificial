@@ -2,8 +2,11 @@
 
 Red Neuronal Convolucional para la clasificación de imágenes del dataset CIFAR-10.
 
-**Autores**: Alessio Cicilano & Alaeddine Daoudi  
-**Fecha**: Octubre 2025
+**Autores:** Alessio Cicilano & Alaeddine Daoudi  
+**Fecha:** Octubre 2025  
+
+🔗 [Repositorio en GitHub](https://github.com/Alaedddine718/La_Vision_Artificial)
+
 
 ---
 
