@@ -151,6 +151,20 @@ La_Vision_Artificial/
 - **Precisión**: ~70% en conjunto de prueba
 - **Dataset**: 60.000 imágenes CIFAR-10 (50k train, 10k test)
 - **Tiempo de entrenamiento**: ~5-10 minutos (5 épocas)
+- **Formato de imágenes**: 32x32 píxeles RGB
+- **Optimizador**: Adam
+- **Función de pérdida**: Categorical Crossentropy
+
+---
+
+## 🎯 Características Principales
+
+✅ **Interfaz web interactiva** con Streamlit  
+✅ **Visualización en tiempo real** del entrenamiento  
+✅ **Clasificación de imágenes propias**  
+✅ **Modelo pre-entrenado** incluido  
+✅ **Gráficos de rendimiento** automáticos  
+✅ **Código modular y organizado**  
 
 ---
 
