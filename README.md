@@ -86,11 +86,13 @@ streamlit run app.py
 
 ## 💻 Uso
 
+### 🌐 Opción 1: Aplicación Web (Streamlit)
+
 Después de ejecutar `streamlit run app.py`, la aplicación se abrirá automáticamente en tu navegador en:
 
 **http://localhost:8501**
 
-### Funcionalidades:
+**Funcionalidades:**
 
 **1. 📊 Visualizar Dataset**
 - Muestra 9 imágenes aleatorias del dataset CIFAR-10
@@ -105,6 +107,21 @@ Después de ejecutar `streamlit run app.py`, la aplicación se abrirá automáti
 - Sube tu propia imagen (JPG, PNG, JPEG)
 - El modelo predice la clase
 - Muestra la confianza y probabilidades de todas las clases
+
+### 📓 Opción 2: Google Colab (Sin instalación)
+
+**¡La forma más rápida de probar el proyecto!**
+
+1. Abre el archivo `CIFAR10_CNN_Colab.ipynb`
+2. Súbelo a [Google Colab](https://colab.research.google.com/)
+3. Ejecuta las celdas en orden
+4. ¡Disfruta del entrenamiento con GPU gratis!
+
+**Ventajas de Google Colab:**
+- ✅ No requiere instalación local
+- ✅ GPU gratuita para entrenamiento rápido
+- ✅ Todo en un solo notebook interactivo
+- ✅ Perfecto para aprendizaje y experimentación
 
 ---
 
@@ -139,6 +156,7 @@ La_Vision_Artificial/
 ├── checkpoints/             # Modelos guardados (generado)
 ├── app.py                   # Interfaz web Streamlit
 ├── main.py                  # Script de terminal
+├── CIFAR10_CNN_Colab.ipynb  # Notebook para Google Colab
 ├── requirements.txt         # Dependencias
 ├── LICENSE                  # Licencia MIT
 └── README.md               # Este archivo
