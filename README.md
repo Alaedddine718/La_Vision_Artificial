@@ -31,38 +31,89 @@ Implementación de una CNN para clasificar imágenes del dataset CIFAR-10 en 10 
 
 ---
 
-## 🚀 Instalación
+## 🚀 Instalación y Ejecución
+
+### 📱 **En macOS / Linux**
+
+Abre el Terminal y ejecuta:
 
 ```bash
+# 1. Clonar el repositorio
 git clone https://github.com/Alaedddine718/La_Vision_Artificial.git
 cd La_Vision_Artificial
+
+# 2. Crear entorno virtual
 python3 -m venv venv
 source venv/bin/activate
+
+# 3. Instalar dependencias
 pip install -r requirements.txt
+
+# 4. Ejecutar la aplicación
+streamlit run app.py
 ```
+
+### 🪟 **En Windows**
+
+Abre Command Prompt (CMD) o PowerShell y ejecuta:
+
+```bash
+# 1. Clonar el repositorio
+git clone https://github.com/Alaedddine718/La_Vision_Artificial.git
+cd La_Vision_Artificial
+
+# 2. Crear entorno virtual
+python -m venv venv
+venv\Scripts\activate
+
+# 3. Instalar dependencias
+pip install -r requirements.txt
+
+# 4. Ejecutar la aplicación
+streamlit run app.py
+```
+
+---
+
+## ⏱️ Tiempo de Instalación
+
+- **Clonación del repositorio**: ~10 segundos
+- **Creación del entorno virtual**: ~30 segundos
+- **Instalación de dependencias**: ~5-10 minutos (TensorFlow es pesado)
+- **Total**: ~10-15 minutos
 
 ---
 
 ## 💻 Uso
 
-### Interfaz Web
-```bash
-streamlit run app.py
-```
+Después de ejecutar `streamlit run app.py`, la aplicación se abrirá automáticamente en tu navegador en:
 
-### Script de Terminal
-```bash
-python main.py
-```
+**http://localhost:8501**
+
+### Funcionalidades:
+
+**1. 📊 Visualizar Dataset**
+- Muestra 9 imágenes aleatorias del dataset CIFAR-10
+- Click en "MOSTRAR EJEMPLOS"
+
+**2. 🚀 Entrenar Modelo**
+- Entrena el modelo CNN con un solo click
+- Visualiza gráficos de precisión y pérdida en tiempo real
+- Guarda el modelo entrenado automáticamente
+
+**3. 🔍 Clasificar Imagen**
+- Sube tu propia imagen (JPG, PNG, JPEG)
+- El modelo predice la clase
+- Muestra la confianza y probabilidades de todas las clases
 
 ---
 
-## 📊 Funcionalidades
+## 📦 Requisitos
 
-- Visualización de ejemplos del dataset
-- Entrenamiento del modelo
-- Clasificación de imágenes personalizadas
-- Gráficos de precisión y pérdida
+- **Python**: 3.9 o superior
+- **Git**: Para clonar el repositorio
+- **Conexión a Internet**: Para descargar dependencias
+- **Espacio en disco**: ~2GB (incluyendo dependencias)
 
 ---
 
@@ -72,32 +123,83 @@ python main.py
 - Streamlit
 - NumPy
 - Matplotlib
+- Pillow
 
 ---
 
-## 📄 Estructura
+## 📁 Estructura del Proyecto
 
 ```
 La_Vision_Artificial/
 ├── modules/
-│   ├── data_loader.py
-│   ├── network.py
-│   └── trainer.py
-├── app.py
-├── main.py
-└── requirements.txt
+│   ├── __init__.py
+│   ├── data_loader.py      # Carga y preprocesamiento
+│   ├── network.py           # Arquitectura CNN
+│   └── trainer.py           # Entrenamiento
+├── checkpoints/             # Modelos guardados (generado)
+├── app.py                   # Interfaz web Streamlit
+├── main.py                  # Script de terminal
+├── requirements.txt         # Dependencias
+├── LICENSE                  # Licencia MIT
+└── README.md               # Este archivo
 ```
 
 ---
 
-## 📈 Resultados
+## 📈 Resultados Esperados
 
-- Precisión: ~70% en conjunto de prueba
-- Dataset: 60.000 imágenes CIFAR-10
-- Entrenamiento: 5-10 épocas
+- **Precisión**: ~70% en conjunto de prueba
+- **Dataset**: 60.000 imágenes CIFAR-10 (50k train, 10k test)
+- **Tiempo de entrenamiento**: ~5-10 minutos (5 épocas)
+
+---
+
+## 🛠️ Solución de Problemas
+
+### Error: "Python no encontrado"
+```bash
+# Mac/Linux
+brew install python3
+
+# Windows
+Descarga Python desde: https://www.python.org/downloads/
+```
+
+### Error: "Git no encontrado"
+```bash
+# Mac
+brew install git
+
+# Windows
+Descarga Git desde: https://git-scm.com/download/win
+```
+
+### Error de permisos en Mac
+```bash
+sudo chown -R $(whoami) venv
+```
+
+---
+
+## 🚫 Detener la Aplicación
+
+Presiona `Ctrl + C` en el terminal donde está ejecutándose Streamlit.
 
 ---
 
 ## 📄 Licencia
 
 MIT License - Ver archivo LICENSE
+
+---
+
+## 👥 Autores
+
+- **Alessio Cicilano**
+- **Alaeddine Daoudi**
+
+---
+
+## 🌐 Repositorio
+
+https://github.com/Alaedddine718/La_Vision_Artificial
